@@ -1,0 +1,97 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{fullpage}
+
+\usepackage[backend=biber,
+sorting=none,
+%citestyle=numeric-comp,
+style=numeric-comp]{biblatex}
+\addbibresource{flux_depth_plot.bib}
+
+\begin{document}
+
+\begin{figure}[ht]
+  \centering
+%   \includegraphics[width=0.48\textwidth]{../plot/total_mu_flux_vs_vertical_depth}
+  \includegraphics[width=12cm]{../plot/total_mu_flux_vs_vertical_depth_w_prediction}
+  \caption{
+Muon flux as a function of depth in metres water equivalent (w.e.) for
+laboratories around the world. Black points represent measurements in
+laboratories with flat overburden and blue points represent
+laboratories under mountains. The red curve is based on MC simulations
+of muons propagating through `standard rock'
+\cite{Kudryavtsev:2008qh}. The red open diamond represents estimated
+flux in the potential future space at Boulby mine at the level of
+1,400~m (3,575~{m~w.e.}). The data points represents the
+following measurements:
+%
+\textbf{CallioLab} (Pyh\"{a}salmi, Finland) at various depths
+\cite{ENQVIST2005286},
+\textbf{LSC} (Canfranc, Spain) \cite{Trzaska2019} (depth taken from
+\cite{Canfranc2005}), \textbf{Soudan} (MN, USA)
+\cite{PhysRevD.90.122003},
+\textbf{Kamioka} (Japan) \cite{PhysRevD.93.012004} (conversion from
+muon rate to flux based on MC simulations from
+\cite{PhysRevD.74.053007}),
+\textbf{Boulby} at 1,100~m level (2850~m~w.e.) \cite{REICHHART201367},
+\textbf{LNGS} (Gran Sasso, Italy) \cite{Agostini.2019},
+\textbf{SURF} (Sudbury, Canada) \cite{ABGRALL201770} (depth taken from
+\cite{PhysRevD.27.1444}),
+\textbf{LSM} (Modane, France) \cite{PhysRevD.40.2163},
+\textbf{Sudbury} \cite{PhysRevD.80.012001},
+\textbf{Jingping} \cite{Guo.2021}.
+}
+\label{fig:flux_depth_prediction}
+\end{figure}
+
+
+
+\textbf{Soudan} \cite{PhysRevD.90.122003}:\\
+Total flux quoted as through horizontal surface. (Only muons with
+energies above 1~GeV)
+
+\textbf{Kamioka} \cite{PhysRevD.93.012004,PhysRevD.74.053007}:\\
+Publication \cite{PhysRevD.93.012004} only quotes the rate of detected
+muons. Publication \cite{PhysRevD.74.053007} quotes MC simulations
+which translate muon flux to detection rate. This result was used to
+convert the measured rate to the total muon flux as seen by a spherical
+detector.
+
+\textbf{Boulby} \cite{REICHHART201367}:\\
+Measurement by ZEPLIN-III with total flux quoted as through a spherical detector.
+
+\textbf{Gran Sasso} \cite{Agostini.2019}:\\
+Measurement by Borexino, flux quoted as through a spherical detector.
+
+\textbf{Fr\'ejus} \cite{PhysRevD.40.2163}:\\
+Flux quoted as from `single muon events' and averaged over muon
+directions. This can be, most likely, interpreted as meaning muon flux
+as seen by spherical detector.
+
+\textbf{Sudbury} \cite{PhysRevD.80.012001}:\\
+
+\textbf{Jingping} \cite{Guo.2021}\\
+
+\textbf{SURF} flux \cite{ABGRALL201770}, depth \cite{PhysRevD.27.1444}\\
+
+\textbf{Canfranc} flux \cite{Trzaska2019}, depth \cite{Canfranc2005}\\
+
+\textbf{Pyhasalmi} \cite{ENQVIST2005286}\\
+
+Red curve \cite{Kudryavtsev:2008qh}.
+
+% Troubles: can't tell what conventions different measurements used. I
+% would assume the standard would be intensity in a horizontal flat
+% detector.
+
+
+\printbibliography
+
+% \begin{thebibliography}{10}
+% \bibitem{Borexino} G. Bellini, et al., Cosmic-muon flux and annual
+%   modulation in Borexino at 3800 m water-equivalent depth, Journal of
+%   Cosmology and Astroparticle Physics 05 (2012) 015.
+% \end{thebibliography}
+
+\end{document}
